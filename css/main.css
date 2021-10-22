@@ -1,0 +1,907 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+}
+
+.container__customer-1 {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.container__customer-2 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header .header__top {
+  background-color: #252525;
+  color: white;
+}
+
+.header .header__top .header__top-countdown {
+  max-width: 850px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
+
+.header .header__top .header__top-countdown .countdown__title {
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.header .header__top .header__top-countdown .countdown__title .black__friday {
+  padding-top: 4px;
+  line-height: 20px;
+}
+
+.header .header__top .header__top-countdown .countdown__title .red--color {
+  color: #ef3636;
+}
+
+.header .header__top .header__top-countdown .countdown__time {
+  position: relative;
+  margin-left: 20px;
+  font-family: "Bebas Neue", cursive;
+  margin-top: -5px;
+}
+
+.header .header__top .header__top-countdown .countdown__time .countdown__time-title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  padding-right: 50px;
+}
+
+.header .header__top .header__top-countdown .countdown__time .time {
+  font-size: 24px;
+  border: 2px solid #515151;
+  border-radius: 5px;
+  padding: 0px 16px;
+  margin-right: 10px;
+}
+
+.header .header__top .header__top-countdown .countdown__time .time .time__sub {
+  font-size: 14px;
+  color: #ef3636;
+}
+
+.header .header__top .header__top-countdown .countdown__button {
+  margin-top: 1px;
+}
+
+.header .header__top .header__top-countdown .countdown__button-link {
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #ef3636;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.header .header__top .header__top-cancel {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+}
+
+.header .header__top .header__top-cancel i {
+  font-size: 24px;
+  color: #5a6274;
+}
+
+@media (max-width: 320px) {
+  .header .countdown__time {
+    margin-left: 0px;
+  }
+  .header .countdown__time .countdown__time-title {
+    padding-right: 5px;
+  }
+  .header .countdown__time .time {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  .header .countdown__button {
+    margin-top: 10px;
+  }
+  .header .header__top-cancel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header .countdown__title {
+    font-size: 18px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .header .countdown__title .black__friday {
+    padding-top: 4px;
+    line-height: 20px;
+  }
+  .header .countdown__title .red--color {
+    color: #ef3636;
+  }
+  .header .countdown__time {
+    margin-left: 20px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .header .countdown__time .countdown__time-title {
+    padding-right: 50px;
+    visibility: hidden;
+  }
+  .header .countdown__time .time {
+    font-size: 24px;
+    border: 2px solid #515151;
+    border-radius: 5px;
+    padding: 0px 16px;
+    margin-right: 10px;
+  }
+  .header .countdown__time .time .time__sub {
+    font-size: 14px;
+    color: #ef3636;
+  }
+  .header .countdown__button {
+    margin-top: 1px;
+  }
+  .header .countdown__button-link {
+    font-family: "Roboto", sans-serif;
+    border: 2px solid #ef3636;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.header .header__block .block-logo {
+  padding-top: 35px;
+  padding-left: 60px;
+}
+
+.header .header__block .menu {
+  padding-left: 10%;
+}
+
+.header .header__block .menu .nav-link {
+  color: #000000;
+  margin-left: -14px;
+  padding-right: 40px;
+}
+
+.header .header__block .header-search {
+  padding-top: 32px;
+  width: 90%;
+}
+
+.header .header__block .header-search .input-group .input-group-text {
+  background-color: white !important;
+  border-radius: 0 !important;
+  height: 48px;
+}
+
+.header .header__block .header-search .input-group .input-group-text:nth-last-of-type(1) {
+  border-left: none;
+}
+
+.header .header__block .header-search .input-group .input-group-text:nth-last-of-type(2) {
+  border-right: none;
+}
+
+.header .header__block .header-search .input-group .input-group-text .bi-search {
+  color: #ef3636;
+  font-size: 20px;
+}
+
+.header .header__block .header-search .input-group .form-control {
+  height: 48px;
+  border-left: none;
+  border-right: none;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.header .header__block .header-search .input-group .btn-search {
+  background-color: #ef3636;
+  color: white;
+  height: 30px;
+  padding: 5px 25px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header .header__block .header__cart {
+  padding-top: 25px;
+  margin-left: 70px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.header .header__block .header__cart .cart__title {
+  font-size: 18px;
+}
+
+.header .header__block .header__cart .cart__sub {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.header .header__block .header__cart a {
+  font-size: 24px;
+  color: #333333;
+  padding-right: 20px;
+}
+
+.header .header__block .header__cart a:nth-child(3) {
+  padding-right: 0px;
+}
+
+.header .header__block .header__cart .heart__icon {
+  position: relative;
+}
+
+.header .header__block .header__cart .heart__icon .heart__badge {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+}
+
+.header .header__block .header__cart .cart__icon {
+  position: relative;
+}
+
+.header .header__block .header__cart .cart__icon .cart__badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.header .header__block .header__cart .cart__price {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header .header__slider {
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+}
+
+.header .header__slider .carousel-caption_customer {
+  position: absolute;
+  top: 18%;
+  left: 17%;
+  text-align: left !important;
+}
+
+.header .header__slider .carousel-caption_customer .slider__sub {
+  font-size: 16px;
+  color: white;
+}
+
+.header .header__slider .carousel-caption_customer .slider__title {
+  width: 450px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 110px;
+  color: white;
+}
+
+.header .header__slider .carousel-caption_customer .slider__price {
+  font-size: 40px;
+  color: #ef3636;
+  padding-bottom: 18px;
+  margin-top: -12px;
+}
+
+.header .header__slider .carousel-caption_customer .slider__button {
+  font-size: 14px;
+  padding: 16px 52px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 320px) {
+  .header .header__slider .carousel-caption_customer {
+    visibility: hidden;
+  }
+  .header .header__slider .slider__sub {
+    font-size: 10px !important;
+    color: white;
+  }
+  .header .header__slider .slider__title {
+    margin-top: -20px !important;
+    width: 450px;
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .header .header__slider .slider__price {
+    font-size: 15px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: -3% !important;
+  }
+  .header .header__slider .slider__button {
+    font-size: 8px !important;
+    padding: 6px 15px !important;
+  }
+}
+
+.wrapper .banner {
+  margin-top: -11%;
+}
+
+.wrapper .banner .banner__caption-left {
+  margin-top: 10%;
+  margin-left: 12%;
+}
+
+.wrapper .banner .banner__caption-left .caption-sale {
+  background-color: #f7c162;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner .banner__caption-left .caption-title {
+  font-size: 50px;
+  width: 50%;
+  line-height: 50px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner .banner__caption-left .caption-sub {
+  font-size: 14px;
+  font-size: "Roboto", sans-serif;
+  margin-bottom: 25px;
+}
+
+.wrapper .banner .banner__caption-left .caption-button {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 12px 15px;
+}
+
+.wrapper .banner .banner__caption-right {
+  margin-top: 10%;
+  margin-left: 12%;
+}
+
+.wrapper .banner .banner__caption-right .caption-sale {
+  background-color: #f7c162;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner .banner__caption-right .caption-title {
+  font-size: 36px;
+  width: 80%;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner .banner__caption-right .caption-button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 12px 15px;
+}
+
+@media (max-width: 320px) {
+  .wrapper .banner .banner__caption-left {
+    visibility: hidden;
+  }
+  .wrapper .banner .banner__caption-right {
+    visibility: hidden;
+  }
+}
+
+.wrapper .featured {
+  padding-top: 3%;
+}
+
+.wrapper .featured .title {
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .featured .featured__sub {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.wrapper .show__product {
+  padding-top: 35px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper .show__product .content {
+  background-color: #f6f6f6;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #d9d4d4;
+  padding-bottom: 30px;
+}
+
+.wrapper .show__product .content:nth-child(1n) {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.wrapper .show__product .content:hover .content-overlay {
+  opacity: 2;
+}
+
+.wrapper .show__product .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.wrapper .show__product .content img {
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper .show__product .content .content-overlay {
+  background: rgba(246, 246, 246, 0.9);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.wrapper .show__product .content .content__des {
+  margin-top: -40px;
+  display: block;
+}
+
+.wrapper .show__product .content .content__des .category {
+  margin-top: -20px;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+.wrapper .show__product .content .content__des .name__product {
+  font-size: 14px;
+  color: black;
+  padding: 10px 0;
+}
+
+.wrapper .show__product .content .content__des .price__product {
+  padding-bottom: 25px;
+}
+
+.wrapper .show__product .content .content__des .content__button {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: black;
+}
+
+.wrapper .show__product .content .content-details {
+  position: absolute;
+  text-align: center;
+  width: 157px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: black;
+  border: 1px solid black;
+}
+
+.wrapper .show__product .content .content-details i {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.wrapper .show__product .content .content-details i:hover {
+  background: black;
+  color: white;
+}
+
+.wrapper .show__product .content .content-details h3 {
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.wrapper .show__product .content .fadeIn-bottom {
+  top: 80%;
+}
+
+.wrapper .show__product .content .sale {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  background-color: #ef3636;
+  padding: 5px 14px;
+  color: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.wrapper .banner__2 {
+  padding-top: 50px;
+}
+
+.wrapper .banner__2 .card {
+  border: none !important;
+  background: none !important;
+}
+
+.wrapper .banner__2 .card .card-img-overlay {
+  font-family: "Bebas Neue", cursive;
+  top: 40%;
+  left: 25%;
+}
+
+.wrapper .banner__2 .card .card-img-overlay .card-title {
+  font-size: 80px;
+  color: white;
+}
+
+.wrapper .banner__2 .card .card-img-overlay .card-text {
+  font-size: 24px;
+  color: #ffd2ba;
+  margin-left: 15%;
+}
+
+.wrapper .banner__2 .banner__content-right {
+  margin-top: 69px;
+}
+
+.wrapper .banner__2 .banner__content-right img {
+  width: 40%;
+  height: auto;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up {
+  background-color: #c0e11f;
+  padding-left: 70px;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right {
+  padding-top: 11%;
+  padding-left: 10%;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right .caption-sale {
+  background-color: #ff573f;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right .caption-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right .cation-price {
+  font-size: 24px;
+  color: #ef3636;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right .cation-price .price-sale {
+  color: #000;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-up .banner--text-right .caption-button {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 12px 25px;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow {
+  background: #2652a3;
+  padding-left: 70px;
+  padding-top: 13%;
+  padding-left: 10%;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow .caption-sale {
+  background-color: #ffdd3f;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow .caption-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow .cation-price {
+  font-size: 24px;
+  color: #ffdd3f;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow .cation-price .price-sale {
+  color: #000;
+}
+
+.wrapper .banner__2 .banner__content-right .content-right-dow .caption-button {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 12px 25px;
+}
+
+.wrapper .lastnew__card {
+  font-family: "Roboto", sans-serif;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+.wrapper .lastnew__card img {
+  height: 450px;
+}
+
+.wrapper .lastnew__card .content {
+  position: absolute;
+  top: 70%;
+  left: 9%;
+}
+
+.wrapper .lastnew__card .content .info {
+  padding: 20px;
+}
+
+.wrapper .lastnew__card .content .info .job {
+  font-size: 14px;
+  color: #ef3636;
+}
+
+.wrapper .lastnew__card .content .post-time {
+  background-color: #000 !important;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+}
+
+.wrapper .testi {
+  padding-bottom: 50px;
+}
+
+.wrapper .testi .slider__introduce {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.wrapper .testi .slider__introduce i {
+  font-size: 40px;
+  color: #ef3636;
+}
+
+.wrapper .testi .slider__introduce .slider__text {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper .testi .slider__introduce .introduce__name {
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .testi .brands img:hover {
+  opacity: 0.5;
+}
+
+.wrapper .instar .instar__icon {
+  background-color: #ef3636;
+  padding-left: 50px;
+  color: white;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper .instar .instar__icon i {
+  padding-top: 20%;
+}
+
+.wrapper .instar .instar__icon .join__instar {
+  padding-top: 40%;
+}
+
+.footer {
+  padding-top: 60px;
+  background-color: #252525;
+}
+
+.footer .footer__top .service i {
+  height: 50%;
+  font-size: 28px;
+  color: #ef3636;
+  border: 2px solid #ef3636;
+  padding: 35px 20px;
+}
+
+.footer .footer__top .service .service__name {
+  margin-left: 20px;
+}
+
+.footer .footer__top .service .service__name .name {
+  font-size: 25px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
+
+.footer .footer__top .service .service__name .color--red {
+  color: #ef3636;
+}
+
+.footer .footer__top .service .service__name .sub {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #b0b0b0;
+}
+
+.footer .footer__mid {
+  padding: 100px 0;
+}
+
+.footer .footer__mid .footer__main .footer__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.footer .footer__mid .footer__main .contact .contact_des {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+  padding-bottom: 20px;
+}
+
+.footer .footer__mid .footer__main .contact .red--color {
+  color: #ef3636;
+}
+
+.footer .footer__mid .footer__main .contact .phone {
+  font-family: "Bebas Neue", cursive;
+}
+
+.footer .footer__mid .footer__main .contact .phone i {
+  font-size: 36px;
+  color: #ef3636;
+}
+
+.footer .footer__mid .footer__main .contact .phone .phone-number {
+  margin-top: -8px;
+  margin-left: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer .footer__mid .footer__main .contact .phone .phone-lg-number {
+  font-size: 40px;
+}
+
+.footer .footer__mid .footer__main .location .location_address {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+  padding-bottom: 20px;
+}
+
+.footer .footer__mid .footer__main .location .location_des {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 0;
+}
+
+.footer .footer__mid .footer__main .location .width--color {
+  color: white;
+}
+
+.footer .footer__mid .footer__main .categories {
+  border-right: 1px solid #b0b0b0a1;
+}
+
+.footer .footer__mid .footer__main .categories ul {
+  padding: 0;
+}
+
+.footer .footer__mid .footer__main .categories ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer .footer__mid .footer__main .newsletter .newsletter_sub {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+  padding-bottom: 20px;
+}
+
+.footer .footer__mid .footer__main .newsletter form .input-group {
+  background: none;
+}
+
+.footer .footer__mid .footer__main .newsletter form .input-group .input-group-text {
+  background: none;
+}
+
+.footer .footer__mid .footer__main .newsletter form .input-group .input-group-text:nth-last-of-type(1) {
+  border-left: none;
+}
+
+.footer .footer__mid .footer__main .newsletter form .input-group .form-control {
+  background: none;
+  border-right: none;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.footer .footer__mid .footer__main .newsletter form .input-group .btn-search {
+  text-decoration: none;
+  background-color: #ef3636;
+  color: white;
+  height: 30px;
+  padding: 5px 14px;
+  font-size: 14px;
+}
+
+.footer .footer__bot .footer__copyright .copyright {
+  font-size: 14px;
+  color: #b0b0b0;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer .footer__bot .footer__copyright .red--color {
+  color: #ef3636;
+}
+
+.footer .footer__bot .footer__copyright .social i {
+  color: white;
+  font-size: 20px;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=main.css.map */
