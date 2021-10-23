@@ -243,7 +243,6 @@ body {
                     text-decoration: none;
                 }
             }
-
         }
 
         .header__cart {
@@ -297,6 +296,7 @@ body {
                 font-family: $fontFamily-extra;
             }
         }
+
     }
 
     .header__slider {
@@ -718,11 +718,20 @@ body {
 
     .lastnew__card {
         font-family: $fontFamily-extra;
-        padding-top: 25px;
         padding-bottom: 100px;
 
         img {
             height: 450px;
+        }
+
+        .post_card {
+            padding-top: 25px;
+        }
+
+        &:hover {
+            .post-time {
+                background-color: #ef3636 !important;
+            }
         }
 
         .content {
@@ -744,6 +753,31 @@ body {
                 font-size: 12px;
                 color: white;
                 padding: 10px;
+                transition: all 0.4s ease-in-out 0s
+            }
+        }
+
+        @media (max-width: 992px) {
+            .content {
+                position: absolute;
+                top: 70%;
+                left: 3%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .content {
+                position: absolute;
+                top: 70%;
+                left: 20%;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .content {
+                position: absolute;
+                top: 70%;
+                left: 4%;
             }
         }
     }
@@ -799,6 +833,14 @@ body {
 
             .join__instar {
                 padding-top: 40%;
+            }
+        }
+        @media (max-width:992px) {
+            i {
+                padding-top: 10% !important;
+            }
+            .join__instar {
+                padding-top: 10% !important;
             }
         }
     }
@@ -934,8 +976,10 @@ body {
                 form {
                     .input-group {
                         background: none;
+
                         .input-group-text {
                             background: none;
+
                             &:nth-last-of-type(1) {
                                 border-left: none;
                             }
@@ -963,18 +1007,20 @@ body {
         }
     }
 
-    .footer__bot{
-        .footer__copyright{
-            .copyright{
+    .footer__bot {
+        .footer__copyright {
+            .copyright {
                 font-size: 14px;
                 color: #b0b0b0;
                 font-family: $fontFamily-extra;
             }
-            .red--color{
+
+            .red--color {
                 color: #ef3636;
             }
-            .social{
-                i{
+
+            .social {
+                i {
                     color: white;
                     font-size: 20px;
                     padding: 0 10px;
